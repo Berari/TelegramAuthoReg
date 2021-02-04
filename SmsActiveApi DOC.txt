@@ -1,0 +1,263 @@
+Метод get_phone_number
+принимает:
+full	Полная аренда
+vk	Вконтакте
+ok	Одноклассники
+wa	Whatsapp
+vi	Viber
+tg	Telegram
+wb	WeChat
+go	Google,youtube,Gmail
+av	avito
+av	avito+переадресация
+fb	facebook
+tw	Twitter
+ot	Любой другой+переадресация
+ub	Uber
+qw	Qiwi
+gt	Gett
+sn	OLX
+ig	Instagram
+ss	Hezzl
+ym	Юла
+ym	Юла+переадресация
+ma	Mail.ru
+mm	Microsoft
+uk	Airbnb
+me	Line messenger
+mb	Yahoo
+we	ДругВокруг
+bd	Пятерочка
+kp	HQ Trivia
+dt	Delivery Club
+ya	Яндекс
+ya	Яндекс+переадресация
+mt	Steam
+oi	Tinder
+fd	Mamba, MeetMe
+zz	Dent
+kt	KakaoTalk
+pm	AOL
+tn	LinkedIN
+qq	Tencent QQ
+mg	Магнит
+pf	pof.com
+yl	Yalla
+kl	kolesa.kz
+po	premium.one
+nv	Naver
+nf	Netflix
+iq	icq
+ob	Onlinerby
+kb	kufarby
+im	Imo
+mc	Michat
+ds	Discord
+vv	Seosprint
+ji	Monobank
+lf	TikTok/Douyin
+hu	Ukrnet
+wg	Skout
+rz	EasyPay
+vf	Q12 Trivia
+ny	Pyro Music
+rr	Wolt
+fe	CliQQ
+la	ssoidnet
+zh	Zoho
+gp	Ticketmaster
+am	Amazon
+ly	Olacabs
+tc	Rambler
+dp	ProtonMail
+pg	NRJ Music Awards
+yf	Citymobil
+op	MIRATORG
+fx	PGbonus
+qr	MEGA
+yk	СпортМастер
+ls	Careem
+bl	BIGO LIVE
+mu	MyMusicTaste
+fu	Snapchat
+bf	Keybase
+sg	OZON
+uu	Wildberries
+ua	BlaBlaCar
+ab	Alibaba
+iv	Inboxlv
+zy	Nttgame
+gd	Surveytime
+fy	Mylove
+ce	mosru
+tl	Truecaller
+hm	Globus
+tx	Bolt
+ka	Shopee
+pl	Перекресток
+ip	Burger King
+cm	Prom
+hw	AliPay
+de	Karusel
+jc	IVI
+rl	inDriver
+df	Happn
+ui	RuTube
+up	Magnolia
+nz	Foodpanda
+kf	Weibo
+ri	BillMill
+cc	Quipp
+lr	Okta
+za	JDcom
+da	MTS CashBack
+ug	Fiqsy
+sq	KuCoinPlay
+zr	Papara
+xv	Wish
+cx	Icrypex
+cw	PaddyPower
+li	Baidu
+dz	Dominos Pizza
+xz	paycell
+rd	Lenta
+qb	Payberry
+hz	Drom
+gl	GlobalTel
+zk	Deliveroo
+ia	Socios
+xl	Wmaraci
+yi	Yemeksepeti
+ew	Nike
+ae	myGLO
+gb	YouStar
+cy	РСА
+qm	RosaKhutor
+dh	eBay
+yb	Квартплата+
+qe	GG
+yw	Grindr
+uz	OffGamers
+gx	Hepsiburadacom
+re	Coinbase
+tj	dbrUA
+ts	PayPal
+rt	hily
+sf	SneakersnStuff
+sv	Dostavista
+qi	32red
+bz	Blizzard
+db	ezbuy
+vw	CoinField
+zl	Airtel
+wf	YandexGo
+lw	MrGreen
+co	Rediffmail
+ey	miloan
+ge	Paytm
+os	Dhani
+ql	CMTcuzdan
+cq	Mercado
+xk	DiDi
+py	Monese
+rv	Kotak811
+jl	Hopi
+pr	Trendyol
+pu	Justdating
+dk	Pairs
+fm	Touchance
+ph	SnappFood
+sw	NCsoft
+nr	Tosla
+hy	Ininal
+tr	Paysend
+pq	CDkeys
+ff	AVON
+sd	dodopizza
+ry	McDonalds
+le	E bike Gewinnspiel
+hr	JKF
+qa	MyFishka
+wc	Craigslist
+kw	Foody
+jg	Grab
+mj	Zalo
+eu	LiveScore
+ll	888casino
+ed	Gamer
+pp	Huya
+th	WestStein
+xr	Tango
+iz	Global24
+tk	МВидео
+rx	Sheerid
+ki	99app
+my	CAIXA
+zm	OfferUp
+tq	Swvl
+au	Haraj
+ei	Taksheel
+rp	hamrahaval
+pa	Gamekit
+fs	 Şikayet var
+ul	Getir
+cf	irancell
+bt	Alfa
+ud	Disney Hotstar
+qu	Agroinform
+un	humblebundle
+rm	Faberlic
+uo	CafeBazaar
+ti	cryptocom
+nk	Gittigidiyor
+jm	mzadqatar
+lp	Algida
+si	Cita Previa
+fj	Potato Chat
+pt	Bitaqaty
+qc	Праймериз 2020
+yo	Amasia
+fx	PGbonus+переадресация
+ve	Dream11
+qh	Oriflame
+iu	Bykea
+ib	Immowelt
+zv	Digikala
+jb	Wing Money
+vn	Yaay
+wn	GameArena
+bj	Вита экспресс
+st	Auchan
+ev	Picpay
+qn	Blued
+cd	SpotHit
+vo	Brand20ua
+il	IQOS
+dx	Powerkredite
+el	Bisu
+dn	Paxful
+lk	PurePlatfrom
+vc	Banqi
+wj	1хbet
+wk	Mobile01
+jj	Aitu
+an	Adidas
+jr	Самокат
+nb	Верный
+gv	Humta
+dw	Divar
+gj	Carousell
+hc	MOMO
+uf	Eneba
+kn	Verse
+qd	Taobao
+hn	1688
+zf	OnTaxi
+gi	Hotline
+uc	Tatneft
+
+Статусы активации:
+1.сообщить о готовности номера (смс на номер отправлено)
+3.запросить еще один код (бесплатно)
+6.завершить активацию *
+8.сообщить о том, что номер использован и отменить активацию
