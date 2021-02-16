@@ -29,4 +29,3 @@ def create_session(cur, x):
     session = str("sessions/anon" + str(x))
     client = TelegramClient(session, api_id, api_hash)
     client.start()
-    

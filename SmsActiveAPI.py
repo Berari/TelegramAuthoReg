@@ -23,25 +23,31 @@ class SmsActive:
     def get_phone_number(self, service, mode = 'all'):
 
         data = requests.get(f'https://sms-activate.ru/stubs/handler_api.php?api_key={self.api_key}&action=getNumber&service={service}').text
+        
+        if data == 'NO_NUMBERS':
+            
+            return 'NO_NUMBERS'
         #data = 'ACCESS_NUMBER:387759514:79038446907'
 
-        phone_and_ip = data.split(':')
-        id = phone_and_ip[1]
-        phone = phone_and_ip[2]
+        else:
 
-        if mode == 'all':
-            data_list = []
+            phone_and_ip = data.split(':')
+            id = phone_and_ip[1]
+            phone = phone_and_ip[2]
 
-            data_list.append(id)
-            data_list.append(phone)
+            if mode == 'all':
+                data_list = []
 
-            return data_list
+                data_list.append(id)
+                data_list.append(phone)
 
-        if mode == 'id':
-            return id
+                return data_list
 
-        if mode == 'phone':
-            return phone
+            if mode == 'id':
+                return id
+
+            if mode == 'phone':
+                return phone
 
     def changing_activation_status(self, id, status):
         data = requests.get(f'https://sms-activate.ru/stubs/handler_api.php?api_key={self.api_key}&action=setStatus&status={status}&id={id}')                           
@@ -52,21 +58,21 @@ class SmsActive:
 
         data = requests.get(f'https://sms-activate.ru/stubs/handler_api.php?api_key={self.api_key}&action=getStatus&id={id}')
 
-        return data.txt
+        return data.text
 
     def get_full_sms(self, id):
         status = SmsActive.get_activation_status(self, id)
 
-        if status == 'STATUS_OK':
+        #if status == 'STATUS_OK':
 
-            sms = requests.get(f'https://sms-activate.ru/stubs/handler_api.php?api_key={self.api_key}&action=getFullSms&id={id}').text
+        sms = requests.get(f'https://sms-activate.ru/stubs/handler_api.php?api_key={self.api_key}&action=getFullSms&id={id}').text
 
-            return sms
+        return sms
 
-        else:
-            a = 'EROR: sms not received'
+        #else:
+            #a = 'EROR: sms not received'
 
-            return a
+            #return a
 
 
 def main():
@@ -77,5 +83,5 @@ def main():
     #print(sms.balance(mode = 2))
     #print(sms.get_phone_number(service = 'tg'))
 
-if __name__ == '__main__':
-    main()
+#if __name__ == '__main__':
+    #main()
