@@ -19,8 +19,7 @@ def create_table(con):
     """)
     con.commit()
 
-#create_table(con)
-#ID = 1
+
 def write_in_db(cur, ID, PHONE, PASSWORD, API_ID, API_HASH, LITECOIN):
     while True:
         #ID = 4
@@ -45,3 +44,36 @@ def write_in_db(cur, ID, PHONE, PASSWORD, API_ID, API_HASH, LITECOIN):
         con.commit()
 
         print("Зарегистрированно!")
+
+def proxy_create_db():
+    
+    con = sql.connect('proxy.db')
+    cur = con.cursor()
+
+    cur.execute("""CREATE TABLE proxy (
+        IP TEXT,
+        PORT INT
+        )
+
+    """)
+    con.commit()
+
+def proxy():
+
+    con = sql.connect('proxy.db')
+    cur = con.cursor()
+
+    IP = '51.158.68.133'
+    PORT = 8811
+    
+    cur.execute("""INSERT INTO proxy (
+            IP,
+            PORT
+            ) 
+            VALUES (?,?);""", 
+            (IP,PORT))
+
+    con.commit()
+
+proxy()
+#proxy_create_db()
