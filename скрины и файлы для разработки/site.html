@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create new application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=686449807">
+    <link rel="shortcut icon" href="/favicon.ico?3" type="image/x-icon" />
+
+    <link href="/css/bootstrap.min.css?3" rel="stylesheet">
+    <link href="/css/bootstrap-extra.css?2" rel="stylesheet">
+    
+    <link href="/css/telegram.css?205" rel="stylesheet" media="screen">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <div class="tl_page_wrap">
+      <div class="tl_page_head navbar navbar-static-top navbar-tg">
+        <div class="navbar-inner">
+          <div class="container">
+            <ul class="nav navbar-nav">
+  <li><a href="//telegram.org/">Home</a></li>
+  <li><a href="//telegram.org/faq">FAQ</a></li>
+  <li><a href="//telegram.org/apps">Apps</a></li>
+  <li class="hidden-xs"><a href="//core.telegram.org/api">API</a></li>
+  <li class="hidden-xs"><a href="//core.telegram.org/mtproto">Protocol</a></li>
+</ul>
+          </div>
+        </div>
+      </div>
+      <div class="container tl_page_container">
+        <div class="tl_page">
+          <div class="app_edit_page">
+  <form class="form-horizontal" id="app_create_form">
+    <input type="hidden" name="hash" value="39988ae9f63e432d23"/>
+    <h2>Create new application</h2>
+
+    <div class="form-group">
+      <label for="app_title" class="col-md-4 text-right control-label">App title:</label>
+      <div class="col-md-8">
+        <input id="app_title" name="app_title" type="text" class="form-control input-xlarge"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="app_shortname" class="col-md-4 text-right control-label">Short name:</label>
+      <div class="col-md-8">
+        <input id="app_shortname" name="app_shortname" type="text" class="form-control input-xlarge" />
+        <p class="help-block"><span class="text-muted">alphanumeric, 5-32 characters</span></p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="app_url" class="col-md-4 text-right control-label">URL:</label>
+      <div class="col-md-8">
+        <input id="app_url" name="app_url" type="text" class="form-control input-xlarge" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 text-right control-label">Platform:</label>
+      <div class="col-md-8">
+        <div class="radio">
+          <label>
+            <input type="radio" name="app_platform" value="android" checked> Android
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="app_platform" value="ios"> iOS
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="app_platform" value="wp"> Windows Phone
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="app_platform" value="bb"> BlackBerry
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="app_platform" value="desktop"> Desktop
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="app_platform" value="web"> Web
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="app_platform" value="ubp"> Ubuntu phone
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="app_platform" value="other"> Other (specify in description)
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="app_desc" class="col-md-4 text-right control-label">Description:</label>
+      <div class="col-md-8">
+        <textarea id="app_desc" name="app_desc" class="form-control input-xlarge" rows="3"></textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-md-8 col-md-offset-4">
+        <button type="button" class="btn btn-primary" data-loading-text="Saving..." id="app_save_btn" onclick="createApp(); return false;">Create application</button>
+        <a href="/" class="btn btn-link" >Cancel</a>
+      </div>
+    </div>
+  </form>
+</div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js?1"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js?4"></script>
+    <script>$('#app_save_btn').button();
+
+function createApp() {
+  $('#app_save_btn').button('loading');
+
+  $.ajax({
+    type: 'POST',
+    url: '/apps/create',
+    data: $('#app_create_form').serialize(),
+    success: function (error) {
+      $('#app_save_btn').button('reset');
+      if (error) {
+        alert(error);
+      } else {
+        location.reload();
+      }
+    },
+    error: function (error) {
+      $('#app_save_btn').button('reset');
+      if (error) {
+        alert(error);
+      }
+    }
+  });
+}
+</script>
+  </body>
+</html>
+<!-- page generated in 4.67ms -->
