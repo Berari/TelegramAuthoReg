@@ -52,3 +52,6 @@ def off_proxy():
     sleep(6)
 
 #Diagnostics utility for Internet Explorer
+create_file(ip = '51.158.68.133', port = '8811')
+#conn_proxy()
+off_proxy()
