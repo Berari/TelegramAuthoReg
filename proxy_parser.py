@@ -1,14 +1,16 @@
 import  requests
 
+
 from bs4 import BeautifulSoup
-from fake_useragent import UserAgent
+
+#from fake_useragent import UserAgent
 
 
 class Parser:
     
     def __init__(self):
         
-        self.html = requests.get('https://hidemy.name/ru/proxy-list/?type=hs#list', headers={'User-Agent': UserAgent().chrome})
+        self.html = requests.get('https://hidemy.name/ru/proxy-list/?type=s#list', headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 YaBrowser/20.9.3.136 Yowser/2.5 Safari/537.36serpstatbot/2.0 beta (advanced backlink tracking bot; http://serpstatbot.com/; abuse@serpstatbot.com)'}).text
         self.proxy_list = []
 
     def parser(self):
@@ -34,3 +36,13 @@ class Parser:
                 self.proxy_list.append(proxy)
 
         return self.proxy_list
+
+p = Parser()
+
+proxy_list = p.parser()
+for i in proxy_list:
+    print(i)
+
+#CheckProxy.main(proxyList = proxy_list)
+
+
