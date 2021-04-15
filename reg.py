@@ -7,6 +7,7 @@ from telethon import TelegramClient, events, sync
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup as bs4
 from time import sleep
+from PIL import  Image
 
 import requests
 import sqlite3
@@ -17,11 +18,38 @@ import create_session
 import SmsActiveAPI
 
 
+def get_code(self,mode, screanshoot):  #entrance, telegram.core
+        
+    def get_text():
+        pass
+
+
+    if mode == 'entrance':
+        screen = pyautogui.screenshot('screenshot.png')
+
+    if mode == 'telegram.core':
+        pass
+
+
+
 class GetApiData:
 
     def __init__(self,phone):
         
         self.phone = phone
+
+    def registration(self):
+        pass
+
+
+    def CreteApp(self):
+        pass
+
+    def GetApiId(self):
+        pass
+
+    def GetApiHesh(self):
+        pass
 
 
 class DataBase:
@@ -111,6 +139,7 @@ if __name__ == '__main__':
     #tele.exit()
 
     sms = SmsActiveAPI.SmsActive(api_key)
+    #https://my.telegram.org/auth
  
     #con.conn(proxy_port = '8080', proxy_id = '1234.56')
     #con.conn(proxy_id = '4534.665', proxy_port = '8081')
